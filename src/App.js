@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {BrowserRouter, useState, useEffect} from 'react'
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import HomePage from "../src/pages/Homepage"
+import { HashLoader } from 'react-spinners';
 
-function App() {
-  return (
+
+const App = () =>{
+
+  // Loading state  
+
+  const [isLoading, setIsLoading] = useState(true); 
+
+  
+  useEffect(() => { 
+
+  
+    // Wait for 3 seconds 
+
+    setTimeout(() => { 
+
+      setIsLoading(false); 
+
+    }, 3000); 
+
+  }, []); 
+
+  
+
+  // Custom css for loader 
+
+  const override = ` 
+
+  display: block; 
+
+  margin-left: auto;
+
+  margin-right:auto; 
+
+  margin-top: 200px;
+
+  border-color: red; 
+`; 
+
+
+  return isLoading ? 
+
+
+    // If page is still loading then splash screen 
+
+    <HashLoader color={'#000000'} isLoading={isLoading} 
+
+      css={override} size={150}  /> :
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+       <Router>
+          <Switch>
+          <Route path="/" exact component={HomePage} />
+          </Switch>
+        </Router>
+      
     </div>
-  );
+    
+
 }
 
 export default App;

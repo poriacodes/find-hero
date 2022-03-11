@@ -1,0 +1,166 @@
+import React, { Component, useRef, useEffect, useState } from "react";
+import '../css/Homepage.css'
+import { Link } from 'react-router-dom'
+import TestImg from '../images/poria.jpg'
+
+const Testimonials = () => {
+
+  
+
+  return (
+         <div className="testCont">
+             <h1 className="testTitle">Testimonials</h1>
+
+            <div className="testCard"> 
+
+             <div className='feedback'>
+               <div className='content'>
+
+
+                   <div id='message'>
+
+                   Digital planet is the best digital school in the whole world.
+                     Digital planet is the best digital school in the whole world.
+                     Digital planet is the best digital school in the whole world.
+                     Digital planet is the best digital school in the whole world.
+                    Digital planet is the best digital school in the whole world.
+                    Digital planet is the best digital school in the whole world.                   
+                     Digital planet is the best digital school in the whole world.
+
+                 </div>
+
+                   <div id='author'>Wole Soyinka</div>
+                   <div id='job'> Nobel Laureat Winner </div>
+
+                   </div>
+
+                     <div id='client'>
+
+                   {/* <Link to="/">
+                     <img src={TestImg} alt="TestimonialImage1"/>
+                     </Link> */}
+
+                </div>
+
+          </div>
+         </div>
+      </div> 
+      
+      
+  )
+
+}
+
+export default Testimonials 
+
+
+
+
+
+.testCard{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.testCard #message{
+  padding: 2rem 0.5rem;
+  max-width: 800px;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  margin: auto;
+  width: 100%;
+}
+
+.testCard #message::before,
+.testCard #message::after{
+
+  font-size: 2rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  
+} 
+
+.testCard #message::before{
+  content: "\275B\275B";
+  color: #000000;
+}
+
+.testCard #message::after{
+  content: "\275C\275C";
+  color: #000000;
+}
+
+.testCard #author{
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.testCard #job{
+  color: #231f20;
+}
+
+.feedback #client{
+  padding-top: 3rem;
+}
+
+.feedback #client link{
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback #client img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+  filter: grayscale(1);
+  padding: 0.25rem;
+  transform: scale(0.8);
+  
+}
+
+/* .feedback #client link:hover,
+.feedback #client link.active {
+  border-color: red;
+  filter: grayscale(0);
+  transform: scale(0);
+  box-shadow: 0px 0.5rem 1rem white;
+} */
+
+
+
+{
+      text:"Digital planet is the best digital school in the whole world.",
+      name:"Irabr Peace",
+      image:"../images/poria.jpg"
+    },
+
+    {
+
+      text:"I love Digital Planet. They offer the best courses.",
+      name:"Kolawole Soyombo",
+      image:"../images/poria.jpg"
+    },
+
+
+    {
+      text:"I would recommend digital planet to anyone. They never disappoint",
+      name:"Dumto Charles",
+      image:"../images/poria.jpg"
+    }
+
+  ]

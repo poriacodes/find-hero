@@ -1,0 +1,194 @@
+#contact{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.getInTouch{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  border: 2px solid #00FFFF;
+  border-radius: 5px;
+  padding: 5px;
+  width:40%;
+  margin-left: 25rem;
+  margin-bottom: 3rem;
+  background: #000000;
+  color: #ffffff;  
+}
+
+
+button{
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#00FFFF 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  height: 45px;
+  width: 40%;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+.contact_container{
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12rem;
+}
+
+.contact_options{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact_option{
+  background: #00FFFF;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid rgb(216, 199, 199);
+  transition: all 400ms ease-in-out;
+  
+}
+
+.contact_option:hover{
+  border-color: #00FFFF;
+  background: gray;
+}
+
+.contact_option a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  margin-top: 0.6rem;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.contact_option h4{
+  color: #000000;
+  font-weight: 900;
+
+}
+
+.contact_option h5{
+  color: #000000;
+  font-weight: 500;
+
+}
+ 
+.contact_option img{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* form */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+ input, textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00FFFF;
+  resize: none;
+  color: #000000;
+  font-weight: 900;
+}
+ 
+
+
+@media screen and (max-width: 768px) {
+
+  .contact_container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+  }
+  
+  input, textarea{
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #00FFFF;
+    resize: none;
+    color: #000000;
+    font-weight: 900;
+  }
+   
+  
+  .getInTouch{
+    margin-bottom: 20px;
+    margin-left: 200px;
+  
+}
+
+
+}
+
+
+  
+@media (max-width: 420px) {
+
+  .contact_container{
+    width: 20%;
+  }
+
+  input, textarea{
+    width: 60%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #00FFFF;
+    resize: none;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .getInTouch{
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;
+    padding: 2px;
+    background: #000000;
+    color: #ffffff;
+  
+}
+
+
+button{
+  width: 40%;
+  font-size: 15px;
+}
+
+
+
+}
