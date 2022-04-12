@@ -58,9 +58,6 @@
 
 .portfolio_test-image{
   border-radius: 1.5rem;
-  overflow: hidden;
-  width: 200px;
-  height: 210px;
 }
 
 .portBtn .PortBtn2 a{
@@ -233,8 +230,6 @@
     .portfolio_test-image{
       border-radius: 1.5rem;
       overflow: hidden;
-      width: 200px;
-      height: 180px;
       padding: 0.5rem;
     }
 
