@@ -11,14 +11,22 @@
   text-align: center;
   font-size: 25px;
   font-weight: 800;
-  border: 2px solid #00FFFF;
   border-radius: 5px;
-  padding: 5px;
-  width:40%;
-  margin-left: 25rem;
-  margin-bottom: 3rem;
-  background: #000000;
-  color: #ffffff;  
+  margin-bottom: 3rem; 
+  position: relative;
+  padding: 0 0 20px;
+}
+
+.getInTouch::after{
+  background-color: #00FFFF;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 100px;
 }
 
 
@@ -72,6 +80,10 @@ button{
   
 }
 
+.contact_option-phone{
+  display: none;
+}
+
 .contact_option:hover{
   border-color: #00FFFF;
   background: gray;
@@ -111,7 +123,7 @@ form{
   gap: 1.2rem;
 }
 
- input, textarea{
+ .formName, .formEmail, .formMessage{
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -131,7 +143,7 @@ form{
     
   }
   
-  input, textarea{
+  .formName, .formEmail, .formMessage{
     width: 80%;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -141,12 +153,54 @@ form{
     font-weight: 900;
   }
    
-  
   .getInTouch{
-    margin-bottom: 20px;
-    margin-left: 200px;
+    margin-bottom: 20px;  
+}
+
+.contact_option-phone{
+  display: block;
+  background: #00FFFF;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid rgb(216, 199, 199);
+  transition: all 400ms ease-in-out;
   
 }
+
+.contact_option:hover{
+  border-color: #00FFFF;
+  background: gray;
+}
+
+.contact_option-phone a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  margin-top: 0.6rem;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.contact_option-phone h4{
+  color: #000000;
+  font-weight: 900;
+
+}
+
+.contact_option-phone h5{
+  color: #000000;
+  font-weight: 500;
+
+}
+ 
+.contact_option-phone img{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
 
 
 }
@@ -157,38 +211,106 @@ form{
 
   .contact_container{
     width: 20%;
+
   }
 
-  input, textarea{
-    width: 60%;
-    padding: 1rem;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-left: 80px;
+ 
+  }
+  
+  
+  .formName, .formEmail, .formMessage{
+    width: 70%;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     border: 2px solid #00FFFF;
     resize: none;
     color: #000000;
     font-weight: 900;
+    margin-top: 10px;
+   
   }
   
   .getInTouch{
-    margin-bottom: 20px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    border: 2px solid #00FFFF;
-    border-radius: 5px;
-    padding: 2px;
-    background: #000000;
-    color: #ffffff;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+ 
+  }
+
+  .getInTouch::after{
+
+    background-color: #00FFFF;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
   
-}
+  }
 
 
 button{
-  width: 40%;
-  font-size: 15px;
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 20px;
+
 }
 
+.contact_option-phone{
+  display: block;
+  background: #00FFFF;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid rgb(216, 199, 199);
+  transition: all 400ms ease-in-out;
+  
+}
+
+.contact_option:hover{
+  border-color: #00FFFF;
+  background: gray;
+}
+
+.contact_option-phone a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  margin-top: 0.6rem;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.contact_option-phone h4{
+  color: #000000;
+  font-weight: 900;
+
+}
+
+.contact_option-phone h5{
+  color: #000000;
+  font-weight: 500;
+
+}
+ 
+.contact_option-phone img{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact_option-phone:hover{
+  border-color: #00FFFF;
+  background: gray;
+}
 
 
 }

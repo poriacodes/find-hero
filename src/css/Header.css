@@ -6,7 +6,7 @@
   }
 
 .bg{
-     background-image: url(../images/bggggg.jpg);  
+     background-image: url(../images/bg-image.jpg);  
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,8 +29,8 @@
   .logo {
     display: flex;
     align-items: center;
-    padding-left: 50px; 
-    margin-top: 20px;
+    padding-left: 70px; 
+    padding-bottom: 15px;
   }
 
   .logo :hover{
@@ -54,7 +54,7 @@
      grid-template-columns: repeat(5, auto); 
      grid-gap: 70px; 
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 150px; 
     margin-bottom: 20px;
@@ -79,7 +79,7 @@
   }
 
   .hero-name{
-    margin-top: 60px;
+    margin-top: 45px;
     font-size: 60px;
     color:#00FFFF; 
 
@@ -87,7 +87,7 @@
 
   .hero-desc{
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     color:#ffffff; 
     font-weight: 800;
 
@@ -95,14 +95,14 @@
 
   .changing-text{
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     color: #00FFFF;
     font-weight: 900;
   }
 
   .typing{
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     color: #00FFFF;
     font-weight: 900;
   
@@ -135,7 +135,7 @@
   margin-left: 20px;
   appearance: none;
   background-color: #FCFCFD;
-  border-radius: 10px;
+  border-radius: 5px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#00FFFF 0 -3px 0 inset;
   box-sizing: border-box;
@@ -154,7 +154,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
 
 }
@@ -164,7 +164,7 @@
   margin-left: 20px;
   appearance: none;
   background-color: #000000;
-  border-radius: 10px;
+  border-radius: 5px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#00FFFF 0 -3px 0 inset;
   box-sizing: border-box;
@@ -183,7 +183,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -205,7 +205,7 @@
   text-decoration: none;
 }
   
-
+ 
   @media screen and (max-width: 768px) {
 
     .logo {
@@ -227,7 +227,7 @@
       flex-direction: column;
       list-style-type: none;
       grid-gap: 10px;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 800; 
       padding-top: 10px;
     }
@@ -273,14 +273,14 @@
   
     .hero-name{
       margin-top: 1px;
-      font-size: 30px;
+      font-size: 20px;
       color:#00FFFF; 
   
     }
   
     .hero-desc{
       margin-top: 20px;
-      font-size: 15px;
+      font-size: 10px;
       color:#ffffff; 
       font-weight: 800;
   
@@ -288,14 +288,14 @@
   
     .changing-text{
       margin-top: 20px;
-      font-size: 15px;
+      font-size: 10px;
       color: #00FFFF;
       font-weight: 900;    
     }
   
     .typing{
       margin-top: 20px;
-      font-size: 15px;
+      font-size: 10px;
       color: #00FFFF;
       font-weight: 900;
   
@@ -303,7 +303,7 @@
 
     .heroBtn{
       margin-top: 15px;
-    }
+    } 
 
     .social-lg2{
       width: 5%;
@@ -311,36 +311,33 @@
     }
 
   
-  }
+  }    
+
   
-  
-  
-  @media (max-width: 420px) {
-    /*Mobile View */
-  
+   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
 
     .logo {
       display: flex;
       align-items: center;
-      padding-left: 5px;
       margin-top: 1px;
+      
     }
     
     .nav-options {
       display: flex;
       width: 100%;
-      height: 70vh;
-      position: fixed;
-      top: 70px;
+      height: 40vh;
+      position: relative;
+      top: 65px;
+      left: -5px;
       opacity: 0;
       transition: all 0.5s ease;
       flex-direction: column;
       list-style-type: none;
-      grid-gap: 7px;
+      grid-gap: 10px;
       font-size: 25px;
-      font-weight: 800;
-      padding-right: 30px;
-      
+      font-weight: 800; 
+      padding-top: 10px;
     }
   
   
@@ -351,8 +348,124 @@
       transition: all 0.5s ease;
       z-index: 1;
       align-content: center;
+     
+    }
+  
+    
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 35px;
+      margin-right: 50px;
+    }
+  
+  
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 7vw;
       
     }
+  
+    .mobile-menu {
+      display: block;
+    }
+  
+  
+    .hero-section{
+      color: white;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .hero-name{
+      margin-top: 1px;
+      font-size: 20px;
+      color:#00FFFF; 
+  
+    }
+  
+    .hero-desc{
+      margin-top: 20px;
+      font-size: 13px;
+      color:#ffffff; 
+      font-weight: 800;
+  
+    }
+  
+    .changing-text{
+      margin-top: 20px;
+      font-size: 13px;
+      color: #00FFFF;
+      font-weight: 900;    
+    }
+  
+    .typing{
+      margin-top: 20px;
+      font-size: 13px;
+      color: #00FFFF;
+      font-weight: 900;
+  
+    }
+  
+    .heroBtn{
+      margin-top: 13px;
+    } 
+  
+    .social-lg2{
+      width: 5%;
+      height: 5%;
+    }
+
+
+  } 
+
+  
+  
+  
+  @media (max-width: 420px) {
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      margin-top: 4px;
+    }
+    
+    .nav-options {
+      display: flex;
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      width: 100%;
+      grid-gap: 10px;
+      padding-top: 30px;
+
+      
+    }
+  
+  
+    .nav-options.active {
+      background-color: #000000;
+      background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+      left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+   
+      
+    }
+
+
   
     .bg{
       background-size: cover;
@@ -381,11 +494,9 @@
   
     .mobile-menu {
       display: block;
-      padding-left: 100px;
     } 
 
-    /* hero */
-
+   
     .hero-section{
       color: white;
       justify-content: center;
@@ -393,36 +504,36 @@
     }
   
     .hero-name{
-      margin-top:1px;
-      font-size: 20px;
+      margin-top: 20px;
+      font-size: 13px;
       color:#00FFFF; 
       font-weight: 700;
     }
   
     .hero-desc{
-      margin-top: 15px;
-      font-size: 20px;
+      margin-top: 30px;
+      font-size: 13px;
       color:#ffffff; 
       font-weight: 600;
   
     }
   
     .changing-text{
-      margin-top: 10px;
-      font-size: 15px;
+      margin-top: 20px;
+      font-size: 13px;
       color: #00FFFF;
       font-weight: 700;
     }
   
     .typing{
-      margin-top: 10px;
-      font-size: 15px;
+      margin-top: 20px;
+      font-size: 13px;
       color: #00FFFF;
       font-weight: 700;
     }
     
     .social-login{
-      margin-top: 10px;
+      margin-top: 20px;
       justify-content: center;
     }
        
@@ -438,13 +549,13 @@
     }
   
     .heroBtn{
-      margin-top: 10px;
+      margin-top: 30px;
     }
 
     .heroBtn1, .heroBtn2{
-      margin-left: 7px;
+      margin-left: 15px;
+      margin-right: 15px;
 
     }
-  }
-  
-  
+  } 
+

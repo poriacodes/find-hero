@@ -41,37 +41,43 @@ const  Contact =()=> {
       <div className='contact_options'>
 
         <article className='contact_option'>
+        <a href='mailto:momohero2@gmail.com' target="_blank" >
           <img src={mail} alt='email'/>
           <h4>Email</h4>
           <h5>momohero2@gmail.com</h5>
-          <a href='mailto:momohero2@gmail.com' target="_blank" >Send a Message</a>
+         <a href='mailto:momohero2@gmail.com' target="_blank" >Send an Email</a>
+          </a>
         </article>
 
         <article className='contact_option'>
-          <img src={Wa} alt='email'/>
+        <a href='https://wa.me/+2349035331649' target="_blank" >
+          <img src={Wa} alt=''/>
           <h4>Whatsapp</h4>
           <h5>+234 903 533 1649</h5>
           <a href='https://wa.me/+2349035331649' target="_blank" >Send a Whatsapp Message</a>
+          </a>
         </article>
 
-        <article className='contact_option'>
-          <img src={call} alt='email'/>
+        <article className='contact_option-phone'> 
+        <a  href="tel:+234-903-533-1649" >
+          <img src={call} alt='call'/>
           <h4>Phone Call</h4>
           <h5>+234 903 533 1649</h5> 
           <a  href="tel:+234-903-533-1649" >Place a Phone Call</a>
+        </a>
         </article>
 
       </div>
 
       {/* End  */}
 
-      <form ref={form} onSubmit={sendEmail} >
+      <form ref={form} onSubmit={sendEmail}>
 
-        <input type="text" name='name' placeholder='Your Full Name' required />
+        <input className='formName' type="text" name='name' placeholder='Your Full Name' required />
 
-        <input type="text" name='email' placeholder='Your Email' required />
+        <input  className='formEmail' type="text" name='email' placeholder='Your Email' required />
 
-        <textarea name='message'  rows="7" placeholder='Your Message'  required />
+        <textarea className='formMessage' type="text" name='message' rows="7" placeholder='Your Message'  required />
 
         <button type='submit' className='formBtn'>Send Message</button>
         

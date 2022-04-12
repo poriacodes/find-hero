@@ -1,5 +1,6 @@
 {
   "name": "find-hero",
+  "homepage": "http://poriacodes.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

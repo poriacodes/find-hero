@@ -43,7 +43,7 @@ const  Footer =()=> {
 
       </ul>
 
-      <p> <span> <FontAwesomeIcon icon={faCopyright} className="fa" /> </span> 2022 Hero Codes | All rights reserved</p>
+      <p> <span> <FontAwesomeIcon icon={faCopyright} className="fa" /> </span> 2022 Herocodes | All rights reserved</p>
 
 
     </footer>

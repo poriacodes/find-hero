@@ -89,13 +89,13 @@ const About = () => {
             <article className="about_card">
               <img className="about_icon" src={userImg} alt="Github" />
               <h5> Clients </h5>
-              <small> 50+ Clients Worldwide </small>
+              <small> 20+ Clients Worldwide </small>
             </article>
 
             <article className="about_card">
               <img className="about_icon" src={projectImg} alt="Github" />
               <h5> Projects </h5>
-              <small> 30+ Completed Projects</small>
+              <small> 20+ Completed Projects</small>
             </article>
           </div>
 

@@ -53,19 +53,26 @@
 }
 
 .reviewFromClients{
-    color: white;
+    color: black;
     text-align: center;
     font-size: 25px;
     font-weight: 800;
-    border: 2px solid #00FFFF;
     border-radius: 5px;
-    padding: 5px;
-    width: 40%;
-    margin-left: 25rem;
-    margin-bottom: 3rem;
-    background: #000000;
-    color: #ffffff;  
+    margin-bottom: 3rem; 
+    position: relative;
+    padding: 0 0 20px;
+  }
   
+  .reviewFromClients::after{
+    background-color: #00FFFF;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 100px;
   }
   
 
@@ -73,7 +80,6 @@
 
     .reviewFromClients{
         margin-bottom: 20px;
-        margin-left: 200px;
       
     }
 
@@ -105,18 +111,23 @@
 @media screen and (max-width:420px){
 
     .reviewFromClients{
-        margin-bottom: 20px;
-        margin-left: 100px;
-        text-align: center;
-        font-size: 15px;
-        font-weight: 500;
-        border: 2px solid #00FFFF;
-        border-radius: 5px;
-        padding: 2px;
-        background: #000000;
-        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+      }
       
-    }
+  
+      .reviewFromClients::after{
+        background-color: #00FFFF;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        width: 100px;
+      
+      }
 
   .testimonials_container{
         width: 10%;

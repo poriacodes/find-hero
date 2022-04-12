@@ -1,9 +1,8 @@
 import React, { useEffect }from 'react'
 import "../css/Testimonial.css";
 import vera from "../images/vera.jpg"
-import jenna from "../images/jenna.JPG"
-import man from "../images/man.png"
-import woman from "../images/woman.png"
+import dynamite from "../images/dynamite.png"
+import memoji from "../images/memoji.jpg"
 import "aos/dist/aos.css"
 import Aos from 'aos'
 
@@ -19,31 +18,28 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-  avatar: vera,
-  name:"Vera Nwole",
-  review: 'This is the best Mobile Developer I have worked with in a long while. He has great worth ethics and provides the exact result from the deign given to him to work with.'
+  avatar: dynamite,
+  name:"Dynamite Asset Management",
+  review: 'Hero is the best Mobile Application Developer we have worked with in a long while. He has great worth ethics and provides the exact result from the design given to him to work with.'
   }, 
 
   {
-    avatar: jenna,
-    name:"Jenna Oriaku",
-    review: 'This is the best Mobile Developer I have worked with in a long while.  He has great worth ethics and provides the exact result from the deign given to him to work with.'
+    avatar: memoji,
+    name:"Ayomide Odulami",
+    review: 'If you are looking to build a highly responsive and creative web application , Hero is the man for the job .'
     }, 
 
     {
-      avatar: man,
-      name:"Ciroma Emeka",
-      review: 'This is the best Mobile Developer I have worked with in a long while. He has great worth ethics and provides the exact result from the deign given to him to work with.'
-      }, 
+      avatar: vera,
+      name:"Vera Nwole",
+      review: 'Hero came highly recommended to develop a Software Application for my company and he completed the task diligently. '
+    },
 
-      {
-        avatar: woman,
-        name:"Sharon Gates",
-        review: 'This is the best Mobile Developer I have worked with in a long while. He has great worth ethics and provides the exact result from the deign given to him to work with.'
-        }, 
-      
-  
-
+      // {
+      //   avatar: woman,
+      //   name:"Sharon Gates",
+      //   review: ''
+      // }
 ]
 
 const  Testimonial =()=> {
