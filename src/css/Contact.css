@@ -9,7 +9,7 @@
 .getInTouch{
   color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 800;
   border-radius: 5px;
   margin-bottom: 3rem; 
@@ -52,7 +52,7 @@ button{
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -95,7 +95,7 @@ button{
   font-weight: 900;
   margin-top: 0.6rem;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact_option h4{
@@ -179,7 +179,7 @@ form{
   font-weight: 900;
   margin-top: 0.6rem;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact_option-phone h4{
@@ -198,9 +198,6 @@ form{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
-
-
 
 
 }
@@ -238,7 +235,7 @@ form{
   
   .getInTouch{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 800;
  
   }
@@ -287,7 +284,7 @@ button{
   font-weight: 900;
   margin-top: 0.6rem;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact_option-phone h4{
