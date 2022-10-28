@@ -6,6 +6,7 @@ import mail  from "../images/mail.png"
 import call from "../images/call.png"
 import Wa from "../images/whatsapp.png"
 import emailjs from "emailjs-com"
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 const  Contact =()=> {
@@ -83,9 +84,12 @@ const  Contact =()=> {
         
       </form>
 
-    </div>
+      <MessengerCustomerChat
+        pageId="100087454950757"
+        appId="652573373157617"
+      />
 
-  
+    </div>
   
   </section>  
     )
